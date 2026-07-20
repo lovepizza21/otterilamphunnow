@@ -248,6 +248,29 @@ h2{font-size:clamp(1.5rem,4vw,2rem);font-weight:600;margin-bottom:8px}
 }
 .branch-actions{display:flex;gap:12px;flex-wrap:wrap}
 
+
+/* storefront photos */
+.storefront-section{padding:54px 0}
+.storefront-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:24px}
+.storefront-card{background:var(--white);border-radius:26px;overflow:hidden;box-shadow:0 10px 28px rgba(46,127,184,.14);border:1px solid rgba(79,168,224,.12)}
+.storefront-media{position:relative;aspect-ratio:16/10;background:linear-gradient(135deg,#eef8ff,#dcefff);overflow:hidden}
+.storefront-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}
+.storefront-card:hover .storefront-media img{transform:scale(1.025)}
+.storefront-label{position:absolute;top:14px;left:14px;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);padding:7px 13px;border-radius:999px;font-family:'Mitr';font-size:.85rem;color:var(--blue-deep);box-shadow:0 5px 15px rgba(39,64,79,.12)}
+.storefront-body{padding:22px}
+.storefront-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px}
+.storefront-head h3{font-size:1.2rem;margin:0}
+.storefront-body p{color:var(--ink-soft);margin-bottom:16px}
+.storefront-actions{display:flex;gap:10px;flex-wrap:wrap}
+.storefront-actions .btn{flex:1;min-width:150px}
+.photo-fallback{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--ink-soft);font-size:.92rem;z-index:0}
+.storefront-media img{position:relative;z-index:1}
+.machine-card[data-type="dry"] .machine-size{color:#E0708C}
+.machine-card[data-type="dry"] .machine-kind{color:#E0708C;background:var(--pink-soft)}
+.machine-card.dryer-25{border:2px solid #f4a261;box-shadow:0 12px 30px rgba(244,162,97,.18)}
+.machine-card.dryer-25 .machine-availability{font-size:1rem;font-weight:700}
+@media (max-width:720px){.storefront-grid{grid-template-columns:1fr}.storefront-section{padding:42px 0}}
+
 /* trust */
 .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .trust div{
@@ -543,18 +566,61 @@ footer small{opacity:.8}
         </div>
       </article>
 
-      <article class="machine-card" data-type="dry">
-        <div class="machine-kind">DRYER</div>
+      <article class="machine-card dryer-25" data-type="dry">
+        <div class="machine-kind">DRYER · เหมืองง่าเท่านั้น</div>
         <div class="machine-size">25 KG</div>
         <p class="machine-use">เหมาะกับผ้านวม ผ้าหนา และผ้าปริมาณมาก</p>
-        <div class="machine-availability muang">มีเฉพาะสาขาเหมืองง่า</div>
+        <div class="machine-availability muang">📍 มีเฉพาะสาขาเหมืองง่าเท่านั้น</div>
         <div class="machine-actions">
-          <a class="machine-map" href="https://share.google/mSSv5WcRJtJgpEgFd" target="_blank" rel="noopener">นำทางไปเหมืองง่า</a>
+          <a class="machine-map" href="https://share.google/mSSv5WcRJtJgpEgFd" target="_blank" rel="noopener">นำทางไปสาขาเหมืองง่า</a>
         </div>
       </article>
     </div>
 
-    <p class="machine-note">ยังไม่แน่ใจว่าควรเลือกขนาดไหน? ผ้านวมและผ้าห่มผืนใหญ่แนะนำเครื่องซัก 28 กก. และเครื่องอบ 25 กก. ที่สาขาเหมืองง่า</p>
+    <p class="machine-note">ยังไม่แน่ใจว่าควรเลือกขนาดไหน? ผ้านวมและผ้าห่มผืนใหญ่แนะนำเครื่องซัก 28 กก. และเครื่องอบ 25 กก. ซึ่งมีเฉพาะสาขาเหมืองง่า</p>
+  </div>
+</section>
+
+<!-- ── รูปหน้าร้านจริง ── -->
+<section class="storefront-section" id="storefronts">
+  <div class="wrap">
+    <div class="eyebrow">รูปหน้าร้านจริง</div>
+    <h2>เช็กหน้าร้านก่อนออกเดินทาง</h2>
+    <p class="sec-sub">เลือกรูปสาขาที่ต้องการ แล้วกดนำทางต่อได้ทันที</p>
+
+    <div class="storefront-grid">
+      <article class="storefront-card">
+        <div class="storefront-media">
+          <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>image/otteri_mall_storefront.jpg</strong></div>
+          <img src="image/otteri_front_plants.jpg" alt="หน้าร้าน OtteriLamphun สาขาเหมืองง่า" loading="lazy" onerror="this.style.display='none'">
+          <span class="storefront-label">เปิด 24 ชั่วโมง</span>
+        </div>
+        <div class="storefront-body">
+          <div class="storefront-head"><h3>สาขาเหมืองง่า</h3><span class="chip24">เครื่องใหญ่ครบ</span></div>
+          <p>มีเครื่องซัก 28 กก. และเครื่องอบ 25 กก. สำหรับผ้านวมและผ้าปริมาณมาก</p>
+          <div class="storefront-actions">
+            <a class="btn btn-blue" href="https://share.google/mSSv5WcRJtJgpEgFd" target="_blank" rel="noopener">นำทางไปเหมืองง่า</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="storefront-card">
+        <div class="storefront-media">
+          <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>image/laundromat.jpg</strong></div>
+          <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>image/otteri_mall_storefront.jpg</strong></div>
+          <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>image/otteri_street_storefront.jpg</strong></div>
+          <img src="image/otteri_street_storefront.jpg" alt="หน้าร้าน OtteriLamphun สาขาเวียงยอง" loading="lazy" onerror="this.style.display='none'">
+          <span class="storefront-label">เปิด 24 ชั่วโมง</span>
+        </div>
+        <div class="storefront-body">
+          <div class="storefront-head"><h3>สาขาเวียงยอง</h3><span class="chip24">มีเครื่องซัก 13 กก.</span></div>
+          <p>เหมาะสำหรับการซักผ้าทั่วไป และมีเครื่องซักขนาด 13 กก. เฉพาะสาขานี้</p>
+          <div class="storefront-actions">
+            <a class="btn btn-blue" href="https://share.google/23uN0DYDnxJRJtjVD" target="_blank" rel="noopener">นำทางไปเวียงยอง</a>
+          </div>
+        </div>
+      </article>
+    </div>
   </div>
 </section>
 
