@@ -5,6 +5,62 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OtteriLamphun WASH&DRY — สาขาเหมืองง่า · เวียงยอง</title>
 <meta name="description" content="OtteriLamphun WASH&DRY ร้านสะดวกซัก 24 ชั่วโมง ลำพูน 2 สาขา: เหมืองง่า และ เวียงยอง ซักเริ่มต้น 50 บาท ราคาเดียวทุกอุณหภูมิ กดล้างเครื่องซักฟรีก่อนซักทุกครั้ง">
+
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#EAF6FF">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="th_TH">
+<meta property="og:title" content="OtteriLamphun WASH&DRY — ร้านสะดวกซัก 24 ชั่วโมง ลำพูน">
+<meta property="og:description" content="เลือกขนาดเครื่องซักหรือเครื่องอบ แล้วกดนำทางไปยังสาขาเหมืองง่าหรือเวียงยองได้ทันที">
+<meta property="og:image" content="images/muang-nga-storefront.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LaundryService",
+  "name": "OtteriLamphun WASH&DRY",
+  "description": "ร้านสะดวกซัก 24 ชั่วโมงในลำพูน สาขาเหมืองง่าและสาขาเวียงยอง",
+  "telephone": "+66-82-652-6649",
+  "openingHours": "Mo-Su 00:00-23:59",
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "ลำพูน"
+  },
+  "sameAs": [
+    "https://line.me/R/ti/p/@otterilamphun"
+  ],
+  "department": [
+    {
+      "@type": "LaundryService",
+      "name": "OtteriLamphun WASH&DRY สาขาเหมืองง่า",
+      "image": "images/muang-nga-storefront.jpg",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "hasMap": "https://share.google/mSSv5WcRJtJgpEgFd"
+    },
+    {
+      "@type": "LaundryService",
+      "name": "OtteriLamphun WASH&DRY สาขาเวียงยอง",
+      "image": "images/wiang-yong-storefront.jpg",
+      "openingHours": "Mo-Su 00:00-23:59",
+      "hasMap": "https://share.google/23uN0DYDnxJRJtjVD"
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "เครื่องซักและเครื่องอบ",
+    "itemListElement": [
+      {"@type":"Offer","name":"เครื่องซัก 10 กก. — มีทั้ง 2 สาขา"},
+      {"@type":"Offer","name":"เครื่องซัก 13 กก. — สาขาเวียงยอง"},
+      {"@type":"Offer","name":"เครื่องซัก 17 กก. — มีทั้ง 2 สาขา"},
+      {"@type":"Offer","name":"เครื่องซัก 28 กก. — สาขาเหมืองง่า"},
+      {"@type":"Offer","name":"เครื่องอบ 15 กก. — มีทั้ง 2 สาขา"},
+      {"@type":"Offer","name":"เครื่องอบ 25 กก. — สาขาเหมืองง่า"}
+    ]
+  }
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600&family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -353,6 +409,54 @@ footer small{opacity:.8}
 @media(max-width:850px){.machine-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:520px){.machine-grid{grid-template-columns:1fr}.machine-card{min-height:auto}.machine-tabs{display:grid;grid-template-columns:1fr 1fr}.machine-tab{width:100%}}
 
+
+/* Enhanced interaction, accessibility and performance */
+.machine-card{
+  opacity:0;
+  transform:translateY(12px) scale(.985);
+  animation:machineCardIn .42s ease forwards;
+}
+.machine-card:nth-child(2){animation-delay:.05s}
+.machine-card:nth-child(3){animation-delay:.10s}
+.machine-card:nth-child(4){animation-delay:.15s}
+.machine-card.show{display:flex}
+.machine-card.is-switching{animation:none;opacity:0;transform:translateY(10px) scale(.98)}
+.machine-card.dryer-25{
+  border:2px solid rgba(255,158,181,.75);
+  background:linear-gradient(180deg,#fff 0%,#fff8fa 100%);
+  box-shadow:0 12px 30px rgba(255,158,181,.18);
+}
+.machine-card.dryer-25 .machine-kind{color:#c65473}
+.machine-tab:focus-visible,.machine-map:focus-visible,.storefront-actions a:focus-visible{
+  outline:3px solid rgba(46,127,184,.35);
+  outline-offset:3px;
+}
+.storefront-card{
+  content-visibility:auto;
+  contain-intrinsic-size:520px;
+}
+.storefront-media img{
+  background:#eaf6ff;
+}
+.reveal{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity .55s ease,transform .55s ease;
+}
+.reveal.in-view{opacity:1;transform:none}
+@keyframes machineCardIn{
+  to{opacity:1;transform:translateY(0) scale(1)}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:.01ms!important;
+  }
+  .reveal,.machine-card{opacity:1;transform:none}
+}
+
 </style>
 </head>
 <body id="top">
@@ -501,7 +605,7 @@ footer small{opacity:.8}
 </section>
 
 <!-- ── 5. เลือกเครื่องและนำทาง ── -->
-<section class="machine-finder" id="machine-select">
+<section class="machine-finder reveal" id="machine-select">
   <div class="wrap">
     <div class="eyebrow">เลือกเครื่อง</div>
     <h2>เลือกขนาดเครื่อง แล้วไปสาขาที่มีได้เลย</h2>
@@ -582,7 +686,7 @@ footer small{opacity:.8}
 </section>
 
 <!-- ── รูปหน้าร้านจริง ── -->
-<section class="storefront-section" id="storefronts">
+<section class="storefront-section reveal" id="storefronts">
   <div class="wrap">
     <div class="eyebrow">รูปหน้าร้านจริง</div>
     <h2>เช็กหน้าร้านก่อนออกเดินทาง</h2>
@@ -592,7 +696,7 @@ footer small{opacity:.8}
       <article class="storefront-card">
         <div class="storefront-media">
           <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>images/muang-nga-storefront.jpg</strong></div>
-          <img src="images/muang-nga-storefront.jpg" alt="หน้าร้าน OtteriLamphun สาขาเหมืองง่า" loading="lazy" onerror="this.style.display='none'">
+          <img src="images/muang-nga-storefront.jpg" alt="หน้าร้าน OtteriLamphun WASH&amp;DRY สาขาเหมืองง่า จังหวัดลำพูน" loading="lazy" decoding="async" fetchpriority="low" width="960" height="600" onerror="this.style.display='none'">
           <span class="storefront-label">เปิด 24 ชั่วโมง</span>
         </div>
         <div class="storefront-body">
@@ -607,7 +711,7 @@ footer small{opacity:.8}
       <article class="storefront-card">
         <div class="storefront-media">
           <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>images/wiang-yong-storefront.jpg</strong></div>
-          <img src="images/wiang-yong-storefront.jpg" alt="หน้าร้าน OtteriLamphun สาขาเวียงยอง" loading="lazy" onerror="this.style.display='none'">
+          <img src="images/wiang-yong-storefront.jpg" alt="หน้าร้าน OtteriLamphun WASH&amp;DRY สาขาเวียงยอง จังหวัดลำพูน" loading="lazy" decoding="async" fetchpriority="low" width="960" height="600" onerror="this.style.display='none'">
           <span class="storefront-label">เปิด 24 ชั่วโมง</span>
         </div>
         <div class="storefront-body">
@@ -695,16 +799,56 @@ footer small{opacity:.8}
 <script>
 const machineTabs = document.querySelectorAll('.machine-tab');
 const machineCards = document.querySelectorAll('.machine-card');
+
+function showMachineType(filter){
+  machineCards.forEach(card => {
+    const shouldShow = card.dataset.type === filter;
+    card.classList.add('is-switching');
+    card.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+
+    window.setTimeout(() => {
+      card.classList.toggle('show', shouldShow);
+      if (shouldShow) {
+        card.classList.remove('is-switching');
+        card.style.animation = 'none';
+        requestAnimationFrame(() => {
+          card.style.animation = '';
+        });
+      }
+    }, 120);
+  });
+}
+
 machineTabs.forEach(tab => {
   tab.addEventListener('click', () => {
-    const filter = tab.dataset.filter;
-    machineTabs.forEach(btn => {
-      const active = btn === tab;
-      btn.classList.toggle('active', active);
-      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+    machineTabs.forEach(item => {
+      const active = item === tab;
+      item.classList.toggle('active', active);
+      item.setAttribute('aria-selected', active ? 'true' : 'false');
+      item.setAttribute('tabindex', active ? '0' : '-1');
     });
-    machineCards.forEach(card => card.classList.toggle('show', card.dataset.type === filter));
+    showMachineType(tab.dataset.filter);
   });
+});
+
+document.querySelectorAll('.machine-card[data-type="dry"]').forEach(card => {
+  card.setAttribute('aria-hidden','true');
+});
+
+const revealObserver = 'IntersectionObserver' in window
+  ? new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, {threshold: 0.12})
+  : null;
+
+document.querySelectorAll('.reveal').forEach(section => {
+  if (revealObserver) revealObserver.observe(section);
+  else section.classList.add('in-view');
 });
 </script>
 </body>
