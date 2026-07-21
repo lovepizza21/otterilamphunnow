@@ -12,7 +12,7 @@
 <meta property="og:locale" content="th_TH">
 <meta property="og:title" content="OtteriLamphun WASH&DRY — ร้านสะดวกซัก 24 ชั่วโมง ลำพูน">
 <meta property="og:description" content="เลือกขนาดเครื่องซักหรือเครื่องอบ แล้วกดนำทางไปยังสาขาเหมืองง่าหรือเวียงยองได้ทันที">
-<meta property="og:image" content="images/muang-nga-storefront.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <script type="application/ld+json">
@@ -34,14 +34,14 @@
     {
       "@type": "LaundryService",
       "name": "OtteriLamphun WASH&DRY สาขาเหมืองง่า",
-      "image": "images/muang-nga-storefront.jpg",
+      "image": "https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg",
       "openingHours": "Mo-Su 00:00-23:59",
       "hasMap": "https://share.google/27wSz4ILdeZ3t8IAi"
     },
     {
       "@type": "LaundryService",
       "name": "OtteriLamphun WASH&DRY สาขาเวียงยอง",
-      "image": "images/wiang-yong-storefront.jpg",
+      "image": "https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-storefront.jpg",
       "openingHours": "Mo-Su 00:00-23:59",
       "hasMap": "https://share.google/O1kBXmftUWMRCPiCP"
     }
@@ -465,7 +465,6 @@ footer small{opacity:.8}
 .gallery-heading h3{font-size:1.35rem;margin-bottom:3px}
 .gallery-heading p{color:var(--ink-soft)}
 .gallery-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:230px;gap:12px}
-.gallery-grid--featured{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:250px}
 .gallery-item{position:relative;overflow:hidden;border:0;border-radius:18px;background:#dcefff;cursor:pointer;padding:0;color:#fff;text-align:left}
 .gallery-item:first-child{grid-column:span 2;grid-row:span 2}
 .gallery-item img,.gallery-item video{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease,filter .35s ease}
@@ -722,8 +721,8 @@ footer small{opacity:.8}
     <div class="storefront-grid">
       <article class="storefront-card">
         <div class="storefront-media">
-          <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>images/muang-nga-storefront.jpg</strong></div>
-          <img src="images/muang-nga-storefront.jpg" alt="หน้าร้าน OtteriLamphun WASH&amp;DRY สาขาเหมืองง่า จังหวัดลำพูน" loading="lazy" decoding="async" fetchpriority="low" width="960" height="600" onerror="this.style.display='none'">
+          <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg</strong></div>
+          <img src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg" alt="หน้าร้าน OtteriLamphun WASH&amp;DRY สาขาเหมืองง่า จังหวัดลำพูน" loading="lazy" decoding="async" fetchpriority="low" width="960" height="600" onerror="this.style.display='none'">
           <span class="storefront-label">เปิด 24 ชั่วโมง</span>
         </div>
         <div class="storefront-body">
@@ -737,8 +736,8 @@ footer small{opacity:.8}
 
       <article class="storefront-card">
         <div class="storefront-media">
-          <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>images/wiang-yong-storefront.jpg</strong></div>
-          <img src="images/wiang-yong-storefront.jpg" alt="หน้าร้าน OtteriLamphun WASH&amp;DRY สาขาเวียงยอง จังหวัดลำพูน" loading="lazy" decoding="async" fetchpriority="low" width="960" height="600" onerror="this.style.display='none'">
+          <div class="photo-fallback">อัปโหลดรูปไว้ที่<br><strong>https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-storefront.jpg</strong></div>
+          <img src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-storefront.jpg" alt="หน้าร้าน OtteriLamphun WASH&amp;DRY สาขาเวียงยอง จังหวัดลำพูน" loading="lazy" decoding="async" fetchpriority="low" width="960" height="600" onerror="this.style.display='none'">
           <span class="storefront-label">เปิด 24 ชั่วโมง</span>
         </div>
         <div class="storefront-body">
@@ -763,26 +762,47 @@ footer small{opacity:.8}
     <article class="branch-gallery" aria-labelledby="gallery-muang-nga-title">
       <div class="gallery-heading">
         <div>
-          <h3 id="gallery-muang-nga-title">เธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒ</h3>
-          <p>เธเธกเธซเธเนเธฒเธฃเนเธฒเธ เนเธเธเน€เธเธฃเธทเนเธญเธเธเธฑเธ 17โ€“28 เธเธ. เนเธฅเธฐเน€เธเธฃเธทเนเธญเธเธญเธ 15โ€“25 เธเธ.</p>
+          <h3 id="gallery-muang-nga-title">สาขาเหมืองง่า</h3>
+          <p>เครื่องซักและเครื่องอบหลายขนาด รวมเครื่องอบ 25 กก.</p>
         </div>
-        <a class="btn btn-blue btn-sm" href="https://share.google/mSSv5WcRJtJgpEgFd" target="_blank" rel="noopener">เธเธณเธ—เธฒเธ</a>
+        <a class="btn btn-blue btn-sm" href="https://share.google/mSSv5WcRJtJgpEgFd" target="_blank" rel="noopener">นำทาง</a>
       </div>
-      <div class="gallery-grid gallery-grid--featured">
-        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="images/muang-nga-storefront.jpg" data-gallery-mime="image/jpeg" data-gallery-title="เธซเธเนเธฒเธฃเนเธฒเธ OtteriLamphun โ€” เธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒ" aria-label="เธ”เธนเธ เธฒเธเธซเธเนเธฒเธฃเนเธฒเธเธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒเนเธเธเน€เธ•เนเธกเธเธญ">
-          <img src="images/muang-nga-storefront.jpg" alt="เธซเธเนเธฒเธฃเนเธฒเธ OtteriLamphun WASH&amp;DRY เธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒ เธเธฑเธเธซเธงเธฑเธ”เธฅเธณเธเธนเธ" loading="lazy" decoding="async">
-          <span class="gallery-caption">เธซเธเนเธฒเธฃเนเธฒเธเธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒ<span>เธเธขเธฒเธข</span></span>
+      <div class="gallery-grid">
+        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg" data-gallery-mime="image/jpeg" data-gallery-title="หน้าร้าน OtteriLamphun — สาขาเหมืองง่า" aria-label="ดูภาพหน้าร้านสาขาเหมืองง่าแบบเต็มจอ">
+          <img src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg" alt="หน้าร้าน OtteriLamphun WASH&amp;DRY สาขาเหมืองง่า จังหวัดลำพูน" loading="lazy" decoding="async">
+          <span class="gallery-caption">หน้าร้านสาขาเหมืองง่า<span>ขยาย</span></span>
         </button>
-        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="images/muang-nga-washers-17-28kg.jpg" data-gallery-mime="image/jpeg" data-gallery-title="เน€เธเธฃเธทเนเธญเธเธเธฑเธ 17 เนเธฅเธฐ 28 เธเธ. โ€” เธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒ" aria-label="เธ”เธนเธ เธฒเธเน€เธเธฃเธทเนเธญเธเธเธฑเธ 17 เนเธฅเธฐ 28 เธเธดเนเธฅเธเธฃเธฑเธกเนเธเธเน€เธ•เนเธกเธเธญ">
-          <img src="images/muang-nga-washers-17-28kg.jpg" alt="เน€เธเธฃเธทเนเธญเธเธเธฑเธเธเนเธฒเธเธเธฒเธ” 17 เนเธฅเธฐ 28 เธเธดเนเธฅเธเธฃเธฑเธก เธ เธฒเธขเนเธเธฃเนเธฒเธ OtteriLamphun เธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒ" loading="lazy" decoding="async">
-          <span class="gallery-caption">เน€เธเธฃเธทเนเธญเธเธเธฑเธ 17 เนเธฅเธฐ 28 เธเธ.<span>เธเธขเธฒเธข</span></span>
+        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-washers-17-28kg.jpg" data-gallery-mime="image/jpeg" data-gallery-title="เครื่องซัก 17 และ 28 กก. — สาขาเหมืองง่า" aria-label="ดูภาพเครื่องซัก 17 และ 28 กิโลกรัมแบบเต็มจอ">
+          <img src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-washers-17-28kg.jpg" alt="เครื่องซักผ้าขนาด 17 และ 28 กิโลกรัม ภายในร้าน OtteriLamphun สาขาเหมืองง่า" loading="lazy" decoding="async">
+          <span class="gallery-caption">เครื่องซัก 17 และ 28 กก.<span>ขยาย</span></span>
         </button>
-        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="images/muang-nga-dryers-15-25kg.jpg" data-gallery-mime="image/jpeg" data-gallery-title="เน€เธเธฃเธทเนเธญเธเธญเธ 15 เนเธฅเธฐ 25 เธเธ. โ€” เธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒ" aria-label="เธ”เธนเธ เธฒเธเน€เธเธฃเธทเนเธญเธเธญเธ 15 เนเธฅเธฐ 25 เธเธดเนเธฅเธเธฃเธฑเธกเนเธเธเน€เธ•เนเธกเธเธญ">
-          <img src="images/muang-nga-dryers-15-25kg.jpg" alt="เน€เธเธฃเธทเนเธญเธเธญเธเธเนเธฒเธเธเธฒเธ” 15 เนเธฅเธฐ 25 เธเธดเนเธฅเธเธฃเธฑเธก เธ เธฒเธขเนเธเธฃเนเธฒเธ OtteriLamphun เธชเธฒเธเธฒเน€เธซเธกเธทเธญเธเธเนเธฒ" loading="lazy" decoding="async">
-          <span class="gallery-caption">เน€เธเธฃเธทเนเธญเธเธญเธ 15 เนเธฅเธฐ 25 เธเธ.<span>เธเธขเธฒเธข</span></span>
+        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-dryers-15-25kg.jpg" data-gallery-mime="image/jpeg" data-gallery-title="เครื่องอบ 15 และ 25 กก. — สาขาเหมืองง่า" aria-label="ดูภาพเครื่องอบ 15 และ 25 กิโลกรัมแบบเต็มจอ">
+          <img src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-dryers-15-25kg.jpg" alt="เครื่องอบผ้าขนาด 15 และ 25 กิโลกรัม ภายในร้าน OtteriLamphun สาขาเหมืองง่า" loading="lazy" decoding="async">
+          <span class="gallery-caption">เครื่องอบ 15 และ 25 กก.<span>ขยาย</span></span>
+        </button>
+        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-washers-10kg.webp.b64" data-gallery-mime="image/webp" data-gallery-title="เครื่องซัก 10 กก. — สาขาเหมืองง่า" aria-label="ดูภาพเครื่องซัก 10 กก. แบบเต็มจอ">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-washers-10kg.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg" alt="เครื่องซัก 10 กิโลกรัมภายในร้าน OtteriLamphun สาขาเหมืองง่า" loading="lazy" decoding="async" width="1200" height="1600">
+          <span class="gallery-caption">โซนเครื่องซัก 10 กก.<span>ขยาย</span></span>
+        </button>
+        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-dryers-15-25kg.webp.b64" data-gallery-mime="image/webp" data-gallery-title="เครื่องอบ 15 และ 25 กก. — สาขาเหมืองง่า" aria-label="ดูภาพเครื่องอบแบบเต็มจอ">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-dryers-15-25kg.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg" alt="เครื่องอบ 15 และ 25 กิโลกรัมภายในร้าน OtteriLamphun สาขาเหมืองง่า" loading="lazy" decoding="async" width="900" height="1600">
+          <span class="gallery-caption">เครื่องอบ 15 และ 25 กก.<span>ขยาย</span></span>
+        </button>
+        <button class="gallery-item" type="button" data-gallery-type="video" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-atmosphere-01.mov.b64" data-gallery-mime="video/quicktime" data-gallery-title="วิดีโอบรรยากาศสาขาเหมืองง่า" aria-label="เล่นวิดีโอบรรยากาศสาขาเหมืองง่า">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-dryers-15-25kg.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg" alt="ภาพตัวอย่างวิดีโอบรรยากาศสาขาเหมืองง่า" loading="lazy" decoding="async">
+          <span class="gallery-caption">วิดีโอบรรยากาศ <span class="gallery-play">▶</span></span>
+        </button>
+        <button class="gallery-item" type="button" data-gallery-type="video" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-atmosphere-02.mov.b64" data-gallery-mime="video/quicktime" data-gallery-title="วิดีโอภายในร้านสาขาเหมืองง่า" aria-label="เล่นวิดีโอภายในร้านสาขาเหมืองง่า">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-washers-10kg.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg" alt="ภาพตัวอย่างวิดีโอภายในร้านสาขาเหมืองง่า" loading="lazy" decoding="async">
+          <span class="gallery-caption">ชมภายในร้าน <span class="gallery-play">▶</span></span>
+        </button>
+        <button class="gallery-item" type="button" data-gallery-type="video" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-atmosphere-03.mp4.b64" data-gallery-mime="video/mp4" data-gallery-title="วิดีโอบรรยากาศเพิ่มเติม — สาขาเหมืองง่า" aria-label="เล่นวิดีโอบรรยากาศเพิ่มเติมสาขาเหมืองง่า">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-washers-10kg.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/muang-nga-storefront.jpg" alt="ภาพตัวอย่างวิดีโอบรรยากาศเพิ่มเติมสาขาเหมืองง่า" loading="lazy" decoding="async">
+          <span class="gallery-caption">บรรยากาศเพิ่มเติม <span class="gallery-play">▶</span></span>
         </button>
       </div>
     </article>
+
     <article class="branch-gallery" aria-labelledby="gallery-wiang-yong-title">
       <div class="gallery-heading">
         <div>
@@ -792,20 +812,20 @@ footer small{opacity:.8}
         <a class="btn btn-blue btn-sm" href="https://share.google/23uN0DYDnxJRJtjVD" target="_blank" rel="noopener">นำทาง</a>
       </div>
       <div class="gallery-grid">
-        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="images/wiang-yong-wide-interior.webp.b64" data-gallery-mime="image/webp" data-gallery-title="ภาพรวมภายในร้าน — สาขาเวียงยอง" aria-label="ดูภาพรวมภายในร้านสาขาเวียงยองแบบเต็มจอ">
-          <img data-b64-src="images/wiang-yong-wide-interior.webp.b64" data-b64-mime="image/webp" src="images/wiang-yong-storefront.jpg" alt="ภาพมุมกว้างภายในร้าน OtteriLamphun สาขาเวียงยอง" loading="lazy" decoding="async" width="1600" height="900">
+        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-wide-interior.webp.b64" data-gallery-mime="image/webp" data-gallery-title="ภาพรวมภายในร้าน — สาขาเวียงยอง" aria-label="ดูภาพรวมภายในร้านสาขาเวียงยองแบบเต็มจอ">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-wide-interior.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-storefront.jpg" alt="ภาพมุมกว้างภายในร้าน OtteriLamphun สาขาเวียงยอง" loading="lazy" decoding="async" width="1600" height="900">
           <span class="gallery-caption">ภาพรวมภายในร้าน<span>ขยาย</span></span>
         </button>
-        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="images/wiang-yong-dryers-and-fans.webp.b64" data-gallery-mime="image/webp" data-gallery-title="โซนเครื่องอบและพัดลม — สาขาเวียงยอง" aria-label="ดูภาพโซนเครื่องอบสาขาเวียงยองแบบเต็มจอ">
-          <img data-b64-src="images/wiang-yong-dryers-and-fans.webp.b64" data-b64-mime="image/webp" src="images/wiang-yong-storefront.jpg" alt="โซนเครื่องอบและพัดลมภายในร้าน OtteriLamphun สาขาเวียงยอง" loading="lazy" decoding="async" width="1200" height="1600">
+        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-dryers-and-fans.webp.b64" data-gallery-mime="image/webp" data-gallery-title="โซนเครื่องอบและพัดลม — สาขาเวียงยอง" aria-label="ดูภาพโซนเครื่องอบสาขาเวียงยองแบบเต็มจอ">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-dryers-and-fans.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-storefront.jpg" alt="โซนเครื่องอบและพัดลมภายในร้าน OtteriLamphun สาขาเวียงยอง" loading="lazy" decoding="async" width="1200" height="1600">
           <span class="gallery-caption">โซนเครื่องอบและพัดลม<span>ขยาย</span></span>
         </button>
-        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="images/wiang-yong-customer-area.webp.b64" data-gallery-mime="image/webp" data-gallery-title="มุมนั่งรอและลูกค้าใช้งานจริง — สาขาเวียงยอง" aria-label="ดูภาพมุมนั่งรอสาขาเวียงยองแบบเต็มจอ">
-          <img data-b64-src="images/wiang-yong-customer-area.webp.b64" data-b64-mime="image/webp" src="images/wiang-yong-storefront.jpg" alt="มุมนั่งรอและลูกค้ากำลังใช้บริการจริงที่สาขาเวียงยอง" loading="lazy" decoding="async" width="1600" height="1200">
+        <button class="gallery-item" type="button" data-gallery-type="image" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-customer-area.webp.b64" data-gallery-mime="image/webp" data-gallery-title="มุมนั่งรอและลูกค้าใช้งานจริง — สาขาเวียงยอง" aria-label="ดูภาพมุมนั่งรอสาขาเวียงยองแบบเต็มจอ">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-customer-area.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-storefront.jpg" alt="มุมนั่งรอและลูกค้ากำลังใช้บริการจริงที่สาขาเวียงยอง" loading="lazy" decoding="async" width="1600" height="1200">
           <span class="gallery-caption">มุมนั่งรอและใช้งานจริง<span>ขยาย</span></span>
         </button>
-        <button class="gallery-item" type="button" data-gallery-type="video" data-gallery-src="images/wiang-yong-atmosphere-01.mov.b64" data-gallery-mime="video/quicktime" data-gallery-title="วิดีโอบรรยากาศสาขาเวียงยอง" aria-label="เล่นวิดีโอบรรยากาศสาขาเวียงยอง">
-          <img data-b64-src="images/wiang-yong-wide-interior.webp.b64" data-b64-mime="image/webp" src="images/wiang-yong-storefront.jpg" alt="ภาพตัวอย่างวิดีโอบรรยากาศสาขาเวียงยอง" loading="lazy" decoding="async">
+        <button class="gallery-item" type="button" data-gallery-type="video" data-gallery-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-atmosphere-01.mov.b64" data-gallery-mime="video/quicktime" data-gallery-title="วิดีโอบรรยากาศสาขาเวียงยอง" aria-label="เล่นวิดีโอบรรยากาศสาขาเวียงยอง">
+          <img data-b64-src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-wide-interior.webp.b64" data-b64-mime="image/webp" src="https://raw.githubusercontent.com/lovepizza21/otterilamphunnow/main/images/wiang-yong-storefront.jpg" alt="ภาพตัวอย่างวิดีโอบรรยากาศสาขาเวียงยอง" loading="lazy" decoding="async">
           <span class="gallery-caption">วิดีโอบรรยากาศ <span class="gallery-play">▶</span></span>
         </button>
       </div>
@@ -970,7 +990,6 @@ let galleryTrigger = null;
 const galleryAssetCache = new Map();
 
 async function resolveGalleryAsset(path, mime){
-  if (!path.endsWith('.b64')) return path;
   if (galleryAssetCache.has(path)) return galleryAssetCache.get(path);
   const response = await fetch(path);
   if (!response.ok) throw new Error(`โหลดไฟล์ไม่สำเร็จ: ${path}`);
